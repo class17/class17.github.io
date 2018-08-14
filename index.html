@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.corner.js"></script>
+		<script type="text/javascript" src="js/jquery.roundabout.js"></script>
+		<script type="text/javascript" src="js/jquery.roundabout-shapes.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>十七班</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				width: 1426px;
+			}
+			
+			@keyframes myfirst {
+				0% {
+					opacity: 0
+				}
+				20% {
+					opacity: 100
+				}
+				40% {
+					opacity: 0
+				}
+				60% {
+					opacity: 0
+				}
+				80% {
+					opacity: 0
+				}
+				100% {
+					opacity: 0
+				}
+			}
+			
+			@keyframes mysecond {
+				0% {
+					opacity: 0
+				}
+				20% {
+					opacity: 0
+				}
+				40% {
+					opacity: 100
+				}
+				60% {
+					opacity: 0
+				}
+				80% {
+					opacity: 0
+				}
+				100% {
+					opacity: 0
+				}
+			}
+			
+			@keyframes mythird {
+				0% {
+					opacity: 0
+				}
+				20% {
+					opacity: 0
+				}
+				40% {
+					opacity: 0
+				}
+				60% {
+					opacity: 100
+				}
+				80% {
+					opacity: 0
+				}
+				100% {
+					opacity: 0
+				}
+			}
+			
+			@keyframes myfourth {
+				0% {
+					opacity: 0
+				}
+				20% {
+					opacity: 0
+				}
+				40% {
+					opacity: 0
+				}
+				60% {
+					opacity: 0
+				}
+				80% {
+					opacity: 100
+				}
+				100% {
+					opacity: 0
+				}
+			}
+			
+			h2 {
+				text-align: center;
+			}
+			
+			p {
+				font-size: 20px;
+				position: absolute;
+				width: 100%;
+				color: darkslategrey;
+				text-align: center;
+			}
+			
+			#one {
+				animation: myfirst 10s infinite;
+			}
+			
+			#two {
+				animation: mysecond 10s infinite;
+			}
+			
+			#three {
+				animation: mythird 10s infinite;
+			}
+			
+			#four {
+				animation: myfourth 10s infinite;
+			}
+			
+			#head {
+				height: 250px;
+				width: 100%;
+				background-image: url(img/banner-1.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+			
+			#main {
+				height: 1310px;
+				width: 100%;
+				background-color: pink;
+			}
+			
+			.audio {
+				overflow: hidden;
+				float: right;
+			}
+			
+			.pic1 {
+				height: 200px;
+				width: 200px;
+				background-image: url(img/十七班.png);
+				background-size: 200px;
+				position: absolute;
+				top: 0px;
+				left: 30px;
+			}
+			
+			.shiqiban {
+				font-size: 15px;
+				color: gray;
+				position: absolute;
+				top: 180px;
+				left: 90px;
+			}
+			
+			.first {
+				height: 40px;
+				width: 100%;
+			}
+			
+			.bander-f {
+				height: 210px;
+				margin-top: 30px;
+			}
+			
+			.welcome {
+				width: 300px;
+				height: 50px;
+				position: absolute;
+				top: 40px;
+				left: 330px;
+				font-size: 36px;
+				color: deeppink;
+			}
+			
+			.ourworld {
+				width: 900px;
+				color: #00FFFF;
+				font-size: 60px;
+				position: absolute;
+				left: 330px;
+				top: 100px;
+			}
+			
+			.daohang {
+				height: 40px;
+				width: 100%;
+				background-color: pink;
+			}
+			
+			.firstpage {
+				height: 40px;
+				width: 250px;
+				float: left;
+				text-align: center;
+				color: white;
+				line-height: 40px;
+				margin-left: 230px;
+			}
+			
+			.album {
+				height: 40px;
+				width: 250px;
+				float: left;
+				text-align: center;
+				color: white;
+				line-height: 40px;
+			}
+			
+			.future {
+				height: 40px;
+				width: 250px;
+				float: left;
+				text-align: center;
+				color: white;
+				line-height: 40px;
+			}
+			
+			.contact {
+				height: 40px;
+				width: 250px;
+				float: left;
+				text-align: center;
+				color: white;
+				line-height: 40px;
+			}
+			
+			a {
+				font-size: 12px;
+				text-decoration: none;
+				color: teal;
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			a:hover {
+				color: white;
+			}
+			
+			.firstpage:hover {
+				background-color: hotpink;
+				cursor: pointer;
+			}
+			
+			.album:hover {
+				background-color: hotpink;
+				cursor: pointer;
+			}
+			
+			.future:hover {
+				background-color: hotpink;
+				cursor: pointer;
+			}
+			
+			.contact:hover {
+				background-color: hotpink;
+				cursor: pointer;
+			}
+			
+			.picplay {
+				width: 100%;
+				height: 400px;
+				background-image: url(img/王者荣耀.png);
+				background-size: 100% 100%;
+			}
+			
+			.wenziplay {
+				height: 45px;
+				width: 700px;
+				position: absolute;
+				top: 200px;
+				left: 300px;
+			}
+			
+			.banjijianjie {
+				height: 450px;
+				width: 100%;
+				background-image: url(img/草坪.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.paizi {
+				height: 100%;
+				width: 250px;
+				background-image: url(img/牌子.png);
+				background-size: 100% 100%;
+				margin-left: 50px;
+			}
+			
+			.paizi-n {
+				width: 100%;
+				height: 100px;
+				position: relative;
+				top: 200px;
+				background-image: url(img/十七班的副本.png);
+				background-size: 100% 100%;
+			}
+			
+			.shiq {
+				height: 200px;
+				width: 600px;
+				float: right;
+				color: red;
+				position: relative;
+				top: -300px;
+				right: 250px;
+				font-size: 17px;
+			}
+			
+			.ourtime {
+				width: 100%;
+				height: 420px;
+				background-image: url(img/播放器背景.jpg);
+				background-size: 100% 100%;
+			}
+			.play-m {
+				height: 398px;
+				width: 532px;
+				position: relative;
+				left: 420px;
+				top: 18px;
+			}
+			#lianxi{
+				height: 250px;
+				background-color: #6495ED;
+				width: 100%;
+			}
+			.nei-1{
+				width: 1200px;
+				
+				height: 60px;
+				margin-left: 40px;
+				position: relative;
+				top: 40px;
+			}
+			.nei-2{
+				width: 1200px;
+				
+				height: 60px;
+				margin-left: 40px;
+				position: relative;
+				top: 40px;
+			}
+		    .nei-3{
+		     	width: 1200px;
+				
+				height: 60px;
+				margin-left: 40px;
+			    position: relative;
+				top: 50px;
+		    }
+			#foot{
+				height: 40px;
+				width: 100%;
+				background-color: pink;
+			}
+			.banquan{
+				height: 100%;
+				width: 200px;
+				margin-left: 580px;
+				font-size: 15px;
+				text-align: center;
+				line-height: 40px;
+				color: white;
+				font-weight: 100;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="head">
+			<div class="first">
+				<audio class="audio" autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="audio/王力宏-大城小爱.mp3">你的浏览器不支持该播放器</audio>
+			</div>
+			<div class="bander-f">
+				<div class="pic1"></div>
+				<div class="shiqiban">class NO.17</div>
+				<div class="welcome">welcome&nbsp; to</div>
+				<div class="ourworld">正阳二高2014届17班官方网站</div>
+				<div class="wenziplay">
+					<p id="one">我在这里，等风也等你</p>
+					<p id="two">再大风暴，也无法阻挡我们前进的脚步</p>
+					<p id='three'>再多光辉的岁月，也比不上我们一起疯狂的时光</p>
+					<p id='four'>落叶无痕，掷地有声</p>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="daohang">
+				<div class="firstpage">
+					<a href="index.html">首页</a>
+				</div>
+				<div class="album">
+					<a href="相册.html">相册</a>
+				</div>
+				<div class="future">
+					<a href="未来发展.html">未来发展</a>
+				</div>
+				<div class="contact">
+					<a href="互相联系.html">互相联系</a>
+				</div>
+			</div>
+			<div class="picplay">
+				<div id="gla">
+					<div id="gla_box">
+						<ul>
+							<li>
+								<div class="gla_inbox">
+									<p>班级大合照</p>
+									<img src="images/01.jpg" />
+								</div>
+							</li>
+
+							<li>
+								<div class="gla_inbox">
+									<p>拔河比赛</p>
+									<img src="images/02.jpg" />
+
+								</div>
+							</li>
+
+							<li>
+								<div class="gla_inbox">
+									<p>幸福是奋斗出来的</p>
+									<img src="images/03.jpg" />
+
+								</div>
+							</li>
+
+							<li>
+								<div class="gla_inbox">
+									<p>青春不散场</p>
+									<img src="images/04.jpg" />
+
+								</div>
+							</li>
+
+							<li>
+								<div class="gla_inbox">
+									<p>我在这里，等风也等你</p>
+									<img src="images/05.jpg" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="banjijianjie">
+				<div class="paizi">
+					<div class="paizi-n">
+					</div>
+				</div>
+				<div class="shiq">班级简介：<br /> 十七班是个传奇的名字
+					<br /> 在生命中,最闪亮的年纪,我们走到了一起.是缘分啊,不论是来自哪里,我们都拥有同一个家。 我们的家就是————十七班.起飞的路程里,总是有风有雨,但,风雨之后总会有彩虹出现。 我们会在这个班集体中共同成长，经历了太多，哭过，笑过，一起叛逆，一起挨批! 一路走来发现自己成长了，成熟了，勇敢了。青春就是这样，苦涩而又不失幸福感。
+
+				</div>
+			</div>
+			<div class="ourtime">
+				
+				<div class="play-m">
+					<video id="media" width="532" height="400" controls>
+						<source src="img/奶粉.mp4">
+						<source src="img/奶粉.ogg">
+				</div>
+				
+			</div>
+			
+		</div>
+		<div id="lianxi">
+		<div class="nei-1">联系开发者：<br />
+		如果您对此网站有什么意见或者好的建议的话，欢迎和网站开发者联系。如果该网站侵犯了你的隐私或者肖像权，请联系老朱予以删除（朱旭QQ：1794599565）。
+		</div>
+		<div class="nei-2">共同开发：<br />
+	    一个人的力量是有限的，我们共同的空间需要大家的支持，由于时间有限，暂时只开发了首页的内容，此外还有“相册”、“未来发展”、“互相联系”、等内容暂未开发。希望有才华的你不要吝啬你的才华。加入我们共同开发我们的空间吧。
+	   （如需源代码文件请联系老朱）。
+		</div>
+		<div class="nei-3">技术与支持：<br/>
+		如果你想学习前端或者更多的编程技术请百度搜索慕课网官网。
+		</div>
+		
+		</div>
+		<div id="foot">
+			<div class="banquan">17班 版权所有 ©️ 2018</div>
+		</div>
+	</body>
+
+</html>
